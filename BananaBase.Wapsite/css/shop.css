@@ -1,0 +1,88 @@
+@charset "utf-8";
+.flbox{ position:fixed; right:0; width:100%; top:0; height:100%; z-index:1000; display:none;}
+
+.flcont li.sel h2 a{ color:#FC0}
+.flcont li p{ display:none;}
+.flcont li.sel p{ display:block;}
+
+.flcont li{ border-bottom:1px solid #eee; padding:15px 0;}
+.flcont{  padding:60px 30px; background:#fff; position:absolute; width:230px; height:100%; right:-290px; top:0;z-index:1001;}
+.flcont h2{ font-size:15px;}
+.flcont p a{ display:inline-block; padding:5px 10px; margin:10px 10px 0 0; background:#fafafa; white-space:nowrap;}
+.subFllist{ margin:10px 10px 0 10px; height:40px; overflow:hidden; text-align:center}
+.subFllist a{ float:left; width:23%; margin:0 1%; overflow:hidden; height:40px; line-height:40px; background:#eee; }
+.flcont p a:hover,.subFllist a:hover{ background:#eaeaea;}
+
+
+.flout{ position:absolute; width:100%; height:100%; z-index:1000; background:rgba(0,0,0,.6); }
+.flout span{ position:absolute; left:10px; bottom:30px; color:#fff;}
+
+/* animation */
+.a-fadeinL{-webkit-animation:0.3s linear forwards;-moz-animation:0.3s linear forwards;-ms-animation:0.3s linear forwards;animation:0.3s linear forwards;}
+.a-fadeinL{-webkit-animation-name:fadeinL;-moz-animation-name:fadeinL;-ms-animation-name:fadeinL;animation-name:fadeinL;}
+
+@-webkit-keyframes fadeinL{
+    0%{-webkit-transform:translateX(0);}
+    100%{-webkit-transform:translateX(-290px);}
+}
+@-moz-keyframes fadeinL{
+    0%{-moz-transform:translateX(0);}
+    100%{-moz-transform:translateX(-290px);}
+}
+@-ms-keyframes fadeinL{
+    0%{-ms-transform:translateX(0);}
+    100%{-ms-transform:translateX(-290px);}
+}
+@keyframes fadeinL{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-290px);}
+}
+
+
+
+.plist04 li{ background:#fff; margin:0px 10px 10px; overflow:hidden; zoom:1;}
+.plist04 li a{ display:block; height:100px;}
+.plist04 li a img{ height:100%;}
+.plist04 li a em{ display:block; float:left;}
+.plist04 li a em.imgbox{ width:32%;height:100px;}
+.plist04 li a em.price{ width:67%;height:50px;margin:0 0 0 1%;}
+.plist04 li a em.pname{width:66%; margin:0 1%; padding:8px 0 0; height:42px; font-size:12px;}
+.plist04 li a b.zk01{ display:block;  width:40px;  padding:3px 5px; background:#FC6; color:#fff; font-size:12px; text-align:center;}
+.plist04 li a span{ line-height:30px;}
+.xgbtn{ width:40px; height:40px; line-height:20px; color:#fff; background:#F66; text-align:center; padding:5px; font-size:14px;}
+.tmBox{ padding:15px; text-align:center;}
+.tmBox #t_d,.tmBox #t_h,.tmBox #t_m,.tmBox #t_s{ display:inline-block; padding:2px; background:#000; color:#fff; font-size:12px;}
+
+.detailTop{ position:relative; z-index:1;}
+.playBtn{ width:40px; height:40px; padding:10px; border-radius:30px; border:1px solid #fff; color:#fff; background:rgba(0,0,0,.3); text-align:center; line-height:20px; position:absolute; top:45%; left:50%; margin-top:-30px; margin-left:-30px; font-size:16px;}
+.videoBox{ position:absolute; top:20%; left:0; width:100%;display:none;}
+.videoBox video{width:100%; height:auto; float:left;}
+
+.detailTop img{ width:100%; float:left;}
+.Pdetail{ background:#fff; text-align:center; padding:20px;}
+.Pdetail h2,.Pdetail h3{ font-size:16px; margin-bottom:10px;}
+.Pdetail h3{ color:#999;}
+.Pdetail h3 .yj{ font-size:12px;}
+.block01{  overflow:hidden; zoom:1; padding:10px 10px 10px 10px; background:#fff;}
+.block01 p{ float:left; width:33%; line-height:24px;text-align:center; font-size:14px}
+.block01 p b{ display:inline-block; background:#ff6984; width:10px; height:10px; border-radius:5px; text-align:center; margin-right:5px; color:#fff; font-weight:normal; font-size:12px;}
+.detailBox{}
+.detailBox img{ width:100%; max-width:480px; float:left}
+
+.footer a{width:50%;text-align:center; height:50px; position:relative; display:block; line-height:50px; font-size:16px; color:#fff;}
+.footer a.BtnZ01{ background:#Fc3;}
+.footer a.BtnZ01:hover{ background:#F90}
+.footer a.BtnZ01:visited{ background:#Fc3; color:#fafafa}
+.footer a.BtnZ02{ background:#F36}
+.footer a.BtnZ02:hover{ background:#F33; color:#000}
+.footer a.BtnZ02:visited{ background:#Fc3; color:#fafafa}
+
+
+.footer{width:100%;height:50px;left:0;bottom:0;z-index:100000; position:fixed;}
+
+@-webkit-keyframes fadeIn {0% {opacity: 0; }30% {opacity: 1; }70%{opacity: 1;}100% {opacity: 0; }}
+@keyframes fadeIn {0% {opacity: 0; }30% {opacity: 1; }70%{opacity: 1;}100% {opacity: 0; }}
+.JoinCart{-webkit-animation-name: fadeIn; -webkit-animation-duration: 2s; 
+-webkit-animation-iteration-count: 1; -webkit-animation-delay: 0s;
+animation-name: fadeIn; animation-duration: 2s; 
+animation-iteration-count: 1; animation-delay: 0s;width:200px; height:60px; background:rgba(0,0,0,.6); position:fixed; top:50%; margin-top:-30px; left:50%; margin-left:-100px; text-align:center; color:#fff; line-height:60px; opacity:0; border-radius:8px;}

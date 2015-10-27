@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5778C153-019C-426A-A7D0-E226B504E0D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Banana.Bll</RootNamespace>
+    <AssemblyName>Banana.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.1.2\lib\net40\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BalBase.cs" />
+    <Compile Include="Db\AdLocationBll.cs" />
+    <Compile Include="Db\AdminResourceBll.cs" />
+    <Compile Include="Db\AdminsBll.cs" />
+    <Compile Include="Db\BannerListBll.cs" />
+    <Compile Include="Db\OperateLogBll.cs" />
+    <Compile Include="Db\OrderBll.cs" />
+    <Compile Include="Db\OrderListBll.cs" />
+    <Compile Include="Db\PayMentTypeBll.cs" />
+    <Compile Include="Db\ProductBll.cs" />
+    <Compile Include="Db\ProductImgBll.cs" />
+    <Compile Include="Db\ProductTypeBll.cs" />
+    <Compile Include="Db\QiangGouBll.cs" />
+    <Compile Include="Db\StatisticsBll.cs" />
+    <Compile Include="Db\TimeSaleBll.cs" />
+    <Compile Include="Db\TimeSaleClassBll.cs" />
+    <Compile Include="Db\UserCollectionBll.cs" />
+    <Compile Include="Db\UsersBll.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseSet.cs" />
+    <Compile Include="ResultSet.cs" />
+    <Compile Include="ResultStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Banana.Dal\Banana.Dal.csproj">
+      <Project>{5C499719-452C-4A54-B708-5E719E519037}</Project>
+      <Name>Banana.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Banana.Entity\Banana.Entity.csproj">
+      <Project>{ABCFC5C2-FF04-4AA4-96F6-776F4EEF8F8D}</Project>
+      <Name>Banana.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

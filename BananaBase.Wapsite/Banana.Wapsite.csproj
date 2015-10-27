@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF9175E7-3223-468A-B70E-930E7B1B0739}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BananaBase.Wapsite</RootNamespace>
+    <AssemblyName>BananaBase.Wapsite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\packages\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\packages\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\packages\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AliPay\return.aspx" />
+    <Content Include="css\base.css" />
+    <Content Include="css\basic.css" />
+    <Content Include="css\forIndex.css" />
+    <Content Include="css\mine.css" />
+    <Content Include="css\myaddress.css" />
+    <Content Include="css\mycart.css" />
+    <Content Include="css\shop.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\bannerPic.png" />
+    <Content Include="images\baseIcons.png" />
+    <Content Include="images\indexIcons.png" />
+    <Content Include="images\smallPic.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\address.js" />
+    <Content Include="js\ajax.js" />
+    <Content Include="js\ajaxhelp.js" />
+    <Content Include="js\baidu.js" />
+    <Content Include="js\loadimage.js" />
+    <Content Include="js\loadingDate.js" />
+    <Content Include="js\loadingDate1.js" />
+    <Content Include="js\zepto.min.js" />
+    <Content Include="mine.aspx" />
+    <Content Include="new.aspx" />
+    <Content Include="OrderCheck.aspx" />
+    <Content Include="OrderInfo.aspx" />
+    <Content Include="pic01\1.jpg" />
+    <Content Include="pic01\10.jpg" />
+    <Content Include="pic01\11.jpg" />
+    <Content Include="pic01\12.jpg" />
+    <Content Include="pic01\13.jpg" />
+    <Content Include="pic01\14.jpg" />
+    <Content Include="pic01\15.jpg" />
+    <Content Include="pic01\2.jpg" />
+    <Content Include="pic01\3.jpg" />
+    <Content Include="pic01\4.jpg" />
+    <Content Include="pic01\5.jpg" />
+    <Content Include="pic01\6.jpg" />
+    <Content Include="pic01\7.jpg" />
+    <Content Include="pic01\8.gif" />
+    <Content Include="pic01\9.jpg" />
+    <Content Include="pic\1.jpg" />
+    <Content Include="pic\10.jpg" />
+    <Content Include="pic\11.jpg" />
+    <Content Include="pic\12.jpg" />
+    <Content Include="pic\13.jpg" />
+    <Content Include="pic\14.jpg" />
+    <Content Include="pic\15.jpg" />
+    <Content Include="pic\16.jpg" />
+    <Content Include="pic\17.jpg" />
+    <Content Include="pic\18.jpg" />
+    <Content Include="pic\19.jpg" />
+    <Content Include="pic\2.jpg" />
+    <Content Include="pic\20.jpg" />
+    <Content Include="pic\21.jpg" />
+    <Content Include="pic\22.jpg" />
+    <Content Include="pic\23.jpg" />
+    <Content Include="pic\24.jpg" />
+    <Content Include="pic\25.jpg" />
+    <Content Include="pic\26.jpg" />
+    <Content Include="pic\27.jpg" />
+    <Content Include="pic\3.jpg" />
+    <Content Include="pic\4.jpg" />
+    <Content Include="pic\5.jpg" />
+    <Content Include="pic\5fcbe44c-3564-4adb-bc1c-5918b8c49977_300_300_s.jpg" />
+    <Content Include="pic\6.jpg" />
+    <Content Include="pic\7.jpg" />
+    <Content Include="pic\8.jpg" />
+    <Content Include="pic\9.jpg" />
+    <Content Include="pic\b.jpg" />
+    <Content Include="pic\banner01.jpg" />
+    <Content Include="pic\banner02.jpg" />
+    <Content Include="pic\banner03.jpg" />
+    <Content Include="pic\banner04.jpg" />
+    <Content Include="pic\banner05.jpg" />
+    <Content Include="pic\p1.jpg" />
+    <Content Include="pic\p10.jpg" />
+    <Content Include="pic\p11.jpg" />
+    <Content Include="pic\p12.jpg" />
+    <Content Include="pic\p2.jpg" />
+    <Content Include="pic\p3.jpg" />
+    <Content Include="pic\p4.jpg" />
+    <Content Include="pic\p5.jpg" />
+    <Content Include="pic\p6.jpg" />
+    <Content Include="pic\p7.jpg" />
+    <Content Include="pic\p8.jpg" />
+    <Content Include="pic\p9.jpg" />
+    <Content Include="pic\x1.jpg" />
+    <Content Include="pic\x2.jpg" />
+    <Content Include="pic\x3.jpg" />
+    <Content Include="pic\xz.jpg" />
+    <Content Include="pic\zs.jpg" />
+    <Content Include="prodlist.aspx" />
+    <Content Include="remai.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="shop_list_detail.aspx" />
+    <Content Include="temai.aspx" />
+    <Content Include="topay.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="yzmImg.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\delcookie.ashx.cs">
+      <DependentUpon>delcookie.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\getgouwuchecount.ashx.cs">
+      <DependentUpon>getgouwuchecount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_cainixihuan.ashx.cs">
+      <DependentUpon>index_cainixihuan.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_getHuwaiShenqi.ashx.cs">
+      <DependentUpon>index_getHuwaiShenqi.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_getTodayDaZhe.ashx.cs">
+      <DependentUpon>index_getTodayDaZhe.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_mine.ashx.cs">
+      <DependentUpon>index_mine.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_new.ashx.cs">
+      <DependentUpon>index_new.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_prolist.ashx.cs">
+      <DependentUpon>index_prolist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_remai.ashx.cs">
+      <DependentUpon>index_remai.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_seach.ashx.cs">
+      <DependentUpon>index_seach.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_temai.ashx.cs">
+      <DependentUpon>index_temai.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index_zainanbibei.ashx.cs">
+      <DependentUpon>index_zainanbibei.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\mine_orderdel.ashx.cs">
+      <DependentUpon>mine_orderdel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\mine_order_getmore.ashx.cs">
+      <DependentUpon>mine_order_getmore.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\mine_sc_list.ashx.cs">
+      <DependentUpon>mine_sc_list.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\min_sc_delbyid.ashx.cs">
+      <DependentUpon>min_sc_delbyid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\OrderInfo.ashx.cs">
+      <DependentUpon>OrderInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\order_add_shop.ashx.cs">
+      <DependentUpon>order_add_shop.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\order_status.ashx.cs">
+      <DependentUpon>order_status.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\qqlogin.ashx.cs">
+      <DependentUpon>qqlogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\shop_list_product.ashx.cs">
+      <DependentUpon>shop_list_product.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\shop_zk_getalldazhe.ashx.cs">
+      <DependentUpon>shop_zk_getalldazhe.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\social_tz_login.ashx.cs">
+      <DependentUpon>social_tz_login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\statistics.ashx.cs">
+      <DependentUpon>statistics.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\topay.ashx.cs">
+      <DependentUpon>topay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\topay.ashx.designer.cs">
+      <DependentUpon>topay.ashx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\yz.ashx.cs">
+      <DependentUpon>yz.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\yzm.ashx.cs">
+      <DependentUpon>yzm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AliPay\Alipay.cs" />
+    <Compile Include="AliPay\AlipayConfig.cs" />
+    <Compile Include="AliPay\AlipayCore.cs" />
+    <Compile Include="AliPay\AlipayNotify.cs" />
+    <Compile Include="AliPay\AlipaySubmit.cs" />
+    <Compile Include="AliPay\ConfigHelper.cs" />
+    <Compile Include="AliPay\MD5.cs" />
+    <Compile Include="AliPay\return.aspx.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AliPay\return.aspx.designer.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ApplicationSettings.cs" />
+    <Compile Include="Common\CCPRestSDK.cs" />
+    <Compile Include="Common\Cookie.cs" />
+    <Compile Include="Common\FileHelps.cs" />
+    <Compile Include="Common\JsonHelper.cs" />
+    <Compile Include="Common\NpoiOperation.cs" />
+    <Compile Include="Common\OrderHelper.cs" />
+    <Compile Include="Common\PageControlHelper.cs" />
+    <Compile Include="Common\StringHelper.cs" />
+    <Compile Include="Common\StringHelps.cs" />
+    <Compile Include="Common\TransactionsUtility.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mine.aspx.cs">
+      <DependentUpon>mine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mine.aspx.designer.cs">
+      <DependentUpon>mine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new.aspx.cs">
+      <DependentUpon>new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new.aspx.designer.cs">
+      <DependentUpon>new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCheck.aspx.cs">
+      <DependentUpon>OrderCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderCheck.aspx.designer.cs">
+      <DependentUpon>OrderCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfo.aspx.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderInfo.aspx.designer.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prodlist.aspx.cs">
+      <DependentUpon>prodlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prodlist.aspx.designer.cs">
+      <DependentUpon>prodlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="remai.aspx.cs">
+      <DependentUpon>remai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="remai.aspx.designer.cs">
+      <DependentUpon>remai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop_list_detail.aspx.cs">
+      <DependentUpon>shop_list_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop_list_detail.aspx.designer.cs">
+      <DependentUpon>shop_list_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="temai.aspx.cs">
+      <DependentUpon>temai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temai.aspx.designer.cs">
+      <DependentUpon>temai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="topay.aspx.cs">
+      <DependentUpon>topay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="topay.aspx.designer.cs">
+      <DependentUpon>topay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yzmImg.aspx.cs">
+      <DependentUpon>yzmImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yzmImg.aspx.designer.cs">
+      <DependentUpon>yzmImg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Banana.Bll\Banana.Bll.csproj">
+      <Project>{5778C153-019C-426A-A7D0-E226B504E0D7}</Project>
+      <Name>Banana.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Banana.Dal\Banana.Dal.csproj">
+      <Project>{5C499719-452C-4A54-B708-5E719E519037}</Project>
+      <Name>Banana.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Banana.Entity\Banana.Entity.csproj">
+      <Project>{ABCFC5C2-FF04-4AA4-96F6-776F4EEF8F8D}</Project>
+      <Name>Banana.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\delcookie.ashx" />
+    <Content Include="ajax\getgouwuchecount.ashx" />
+    <Content Include="ajax\index_cainixihuan.ashx" />
+    <Content Include="ajax\index_getHuwaiShenqi.ashx" />
+    <Content Include="ajax\index_getTodayDaZhe.ashx" />
+    <Content Include="ajax\index_mine.ashx" />
+    <Content Include="ajax\index_new.ashx" />
+    <Content Include="ajax\index_prolist.ashx" />
+    <Content Include="ajax\index_remai.ashx" />
+    <Content Include="ajax\index_seach.ashx" />
+    <Content Include="ajax\index_temai.ashx" />
+    <Content Include="ajax\index_zainanbibei.ashx" />
+    <Content Include="ajax\mine_orderdel.ashx" />
+    <Content Include="ajax\mine_order_getmore.ashx" />
+    <Content Include="ajax\mine_sc_list.ashx" />
+    <Content Include="ajax\min_sc_delbyid.ashx" />
+    <Content Include="ajax\OrderInfo.ashx" />
+    <Content Include="ajax\order_add_shop.ashx" />
+    <Content Include="ajax\order_status.ashx" />
+    <Content Include="ajax\qqlogin.ashx" />
+    <Content Include="ajax\shop_list_product.ashx" />
+    <Content Include="ajax\shop_zk_getalldazhe.ashx" />
+    <Content Include="ajax\social_tz_login.ashx" />
+    <Content Include="ajax\statistics.ashx" />
+    <Content Include="ajax\topay.ashx" />
+    <Content Include="ajax\yz.ashx" />
+    <Content Include="ajax\yzm.ashx" />
+    <None Include="pic\未标题-1.psd" />
+    <None Include="pic\未标题-3.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13273</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.ptypeBox{ margin:25px 0 0 0}
+.ptypeBox ul{ padding:0 15px;}
+.ptypeBox li{ width:25%; float:left;}
+.ptypeBox li a{ display:block; font-size:12px; text-align:center; margin:0 0 15px 0; line-height:25px}
+.ptypeBox li a span{ display:block; width:32px; height:32px; padding:6px; border-radius:25px; -webkit-border-radius:25px; margin:0 auto; }
+.ptypeBox li a span i{display:block; width:32px; height:32px; background:url(../images/indexIcons.png) no-repeat; background-size:32px 256px; -webkit-background-size:32px 256px;}
+
+a.type01 span{ background-color:#fee04c; }
+a.type02 span{ background-color:#ffacbe; }
+a.type03 span{ background-color:#ffb574; }
+a.type04 span{ background-color:#ff7c98; }
+a.type05 span{ background-color:#fedcab; }
+a.type06 span{ background-color:#ffb574; }
+a.type07 span{ background-color:#ef4a4a; }
+a.type08 span{ background-color:#ff4f4f; }
+
+
+
+.ptypeBox li a.type01 span i{ background-position:0 0; }
+.ptypeBox li a.type02 span i{ background-position:0 -32px; }
+.ptypeBox li a.type03 span i{ background-position:0 -64px; }
+.ptypeBox li a.type04 span i{ background-position:0 -96px; }
+.ptypeBox li a.type05 span i{ background-position:0 -128px; }
+.ptypeBox li a.type06 span i{ background-position:0 -160px; }
+.ptypeBox li a.type07 span i{ background-position:0 -192px; }
+.ptypeBox li a.type08 span i{ background-position:0 -224px; }
+
+
+.CommandBox img{ width:100%; float:left;}
+
+.indextop{ padding:10px; text-align:center;}
+.indextop a{ display:block; }
+.indextop a span{ display:inline-block; height:32px; line-height:32px;  padding:0 32px;font-size:16px; }
+.indextop a span.Bg50{background-position:right -64px}
+
+.temaiBox li{ float:left; width:33.3%; overflow:hidden; }
+.temaiBox li a{ display:block; width:90%; margin:0 auto;}
+.temaiBox li img{ width:100%;}
+.temaiBox li a span{ display:inline-block; line-height:15px; margin-bottom:5px; font-size:12px;}
+.temaiBox li a span.ptitle{ height:15px; overflow:hidden;}
+.temaiBox li a span.price{ color:#999;}
+.temaiBox li a span.price i{ color:#F60; font-size:14px; margin-right:5px;}
+
+.adBanner{ background:#eee;}
+.adBanner img{ width:100%; float:left;}
+.adList{ width:100%; overflow:hidden;}
+.adList ul{ width:102%;}
+.adList ul li{ width:33.3%; float:left; text-align:center; overflow:hidden; zoom:1;}
+.adList ul li a{ display:block;border-right:1px solid #FFF;border-bottom:1px solid #FFF; overflow:hidden; zoom:1; height:150px; line-height:25px; color:#999}
+.adList ul li a:visited{ color:#888;}
+.adList ul li img{ width:100%; float:left;}

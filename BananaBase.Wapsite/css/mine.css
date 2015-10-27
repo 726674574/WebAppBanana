@@ -1,0 +1,10 @@
+.plist li{position:relative;background:#fff;}.plist li.faBg{background:#fafafa;}.plist li a{color:#333;padding:10px;display:block;overflow:hidden;zoom:1;position:relative;}.smallImgbox{width:26%;overflow:hidden }.smallImgbox img{width:70px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-o-border-radius:6px;}.Pdesc{width:70%;float:left;}.Pdesc b{display:block;padding-bottom:5px;font-weight:normal; font-size:14px;}.Pdesc span{max-height:30px;overflow:hidden}.zk{float:right;color:#e75464;background:#51484b;color:#fff;font-size:12px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;line-height:30px;text-align:center;padding:0 5px;overflow:hidden;height:30px;position:absolute;right:10px;top:20px;z-index:100000}
+.orderTitle{ line-height:35px; padding:0 10px; background:#fff; font-size:16px; border-bottom:1px solid #eee; background:#fafafa}
+.orderTitle span{ margin:0 8px 0 0;}
+.fororder{ margin:10px;}
+.fororder li{ border:1px solid #eee; margin-bottom:10px;}
+
+.fororder li a.detail{ border-bottom:1px solid #eee}
+.fororder li img{ width:60px;}
+.Titledesc{ font-size:12px; color:#999;}
+.Titledesc i{ margin-right:10px;}
