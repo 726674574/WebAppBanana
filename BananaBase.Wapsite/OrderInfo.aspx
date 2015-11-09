@@ -92,6 +92,7 @@
     <nav class="buybtn" style="position: fixed; bottom: 0; width: 100%; left: 0; z-index: 100000000"><a href="javascript:void(0)" id="js_okBtn" class="btnok">总计：¥<span id="total">123</span> &nbsp;&nbsp; 提交订单</a><a href="javascript:void(0)" id="js_sending"  class="btnok" style="display:none;">订单提交中...</a></nav>
      <span id="sppcity" datap="<%=userp %>" datac="<%=userc %>" istj="0"></span>
       <input type="hidden"  id="isLinepayment" value="<%=isLinepayment %>" />
+       <input type="hidden"  id="isFree" value="<%=isFree %>" />
 </body>
 <script src="/js/address.js" type="text/javascript"></script>
 <script src="/js/ajaxhelp.js" type="text/javascript"></script>
@@ -317,28 +318,30 @@
             }
 
         });
-
-        if (getSelectedText("payment") == "货到付款") {
-            if (tt < 199) {
-                document.getElementById("peisong").innerHTML = "15";
-                tt += 15;
-            }
-            else {
-                document.getElementById("peisong").innerHTML = "0";
-            }
+        if (document.getElementById("isFree").value == "True") {
+            document.getElementById("peisong").innerHTML = "0";
         } else {
-            if (tt < 69) {
-                document.getElementById("peisong").innerHTML = "15";
-                tt += 15;
+
+            if (getSelectedText("payment") == "货到付款") {
+                if (tt < 199) {
+                    document.getElementById("peisong").innerHTML = "15";
+                    tt += 15;
+                } else {
+                    document.getElementById("peisong").innerHTML = "0";
+                }
+            } else {
+                if (tt < 69) {
+                    document.getElementById("peisong").innerHTML = "15";
+                    tt += 15;
+                } else {
+                    document.getElementById("peisong").innerHTML = "0";
+                }
             }
-            else {
-                document.getElementById("peisong").innerHTML = "0";
-            }
+
         }
         if (document.getElementById("checkbox").checked) {
             tt -= parseInt(document.getElementById("bananaCount").innerHTML);
         }
-
         document.getElementById("total").innerHTML = tt;
 
 

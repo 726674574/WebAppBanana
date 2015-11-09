@@ -34,9 +34,9 @@ namespace Banana.Dal.Db
         public int Add(Product entity)
         {
             string sql = @"insert into [Product]
-                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment])
+                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment],[IsFree])
                                values
-                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment)";
+                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment,@IsFree)";
         
             object param = new
             {
@@ -59,7 +59,8 @@ namespace Banana.Dal.Db
                 sale = entity.Sale,
                 videourl=entity.VideoUrl,
                 Source = entity.Source,
-                Linepayment = entity.Linepayment
+                Linepayment = entity.Linepayment,
+                IsFree = entity.IsFree
                 
                 
                 
@@ -77,9 +78,9 @@ namespace Banana.Dal.Db
         public int AddAndReturn(Product entity)
         {
             string sql = @"insert into [Product]
-                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment])
+                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment],[IsFree])
                                values
-                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment)";
+                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment,@IsFree)";
         
             object param = new
             {
@@ -102,7 +103,8 @@ namespace Banana.Dal.Db
                 sale = entity.Sale,
                 videourl=entity.VideoUrl,
                 Source = entity.Source,
-                Linepayment = entity.Linepayment
+                Linepayment = entity.Linepayment,
+                IsFree = entity.IsFree
                 
             };
             
@@ -121,9 +123,9 @@ namespace Banana.Dal.Db
         public int Add(Product entity, IDbTransaction tran)
         {
             string sql = @"insert into [Product]
-                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment])
+                               ([productName], [productNo], [marketPrice], [oemPrice], [tradeprice], [collects], [hits], [smallThumPic], [bigThumPic], [addTime], [status], [productTypeId], [creater], [keyword], [articleId], [taobaolink], [sale],[videourl],[Source],[Linepayment],[IsFree])
                                values
-                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment)";
+                               (@productName, @productNo, @marketPrice, @oemPrice, @tradeprice, @collects, @hits, @smallThumPic, @bigThumPic, @addTime, @status, @productTypeId, @creater, @keyword, @articleId, @taobaolink, @sale,@videourl,@Source,@Linepayment,@IsFree)";
             
             object param = new
             {
@@ -146,7 +148,8 @@ namespace Banana.Dal.Db
                 sale = entity.Sale,
                 videourl=entity.VideoUrl,
                 Source = entity.Source,
-                Linepayment = entity.Linepayment
+                Linepayment = entity.Linepayment,
+                IsFree = entity.IsFree
                
             };
             int count = tran.Connection.Execute(sql, param, tran);
@@ -266,7 +269,7 @@ namespace Banana.Dal.Db
 		public int Update(Product entity)
 		{
 			//GetUpdateSql2
-            string sql = @"update [Product] set productName=@productName, productNo=@productNo, marketPrice=@marketPrice, oemPrice=@oemPrice, tradeprice=@tradeprice, collects=@collects, hits=@hits, smallThumPic=@smallThumPic, bigThumPic=@bigThumPic, addTime=@addTime, status=@status, productTypeId=@productTypeId, creater=@creater, keyword=@keyword, articleId=@articleId, taobaolink=@taobaolink, sale=@sale,videourl=@videourl,Source=@Source,Linepayment=@Linepayment  where id=@id ";
+            string sql = @"update [Product] set productName=@productName, productNo=@productNo, marketPrice=@marketPrice, oemPrice=@oemPrice, tradeprice=@tradeprice, collects=@collects, hits=@hits, smallThumPic=@smallThumPic, bigThumPic=@bigThumPic, addTime=@addTime, status=@status, productTypeId=@productTypeId, creater=@creater, keyword=@keyword, articleId=@articleId, taobaolink=@taobaolink, sale=@sale,videourl=@videourl,Source=@Source,Linepayment=@Linepayment,IsFree=@IsFree  where id=@id ";
 			   object param = new
             {
                id = entity.Id, 
@@ -289,7 +292,8 @@ namespace Banana.Dal.Db
                sale = entity.Sale,
                videourl = entity.VideoUrl,
                Source = entity.Source,
-               Linepayment = entity.Linepayment
+               Linepayment = entity.Linepayment,
+               IsFree = entity.IsFree
               
             };
             

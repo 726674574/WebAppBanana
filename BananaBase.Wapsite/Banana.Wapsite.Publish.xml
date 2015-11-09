@@ -8,7 +8,7 @@
     <file relUrl="css/forIndex.css" publishTime="10/19/2015 13:53:05" />
     <file relUrl="pic/25.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="ajax/order_add_shop.ashx" publishTime="10/19/2015 14:12:07" />
-    <file relUrl="index.aspx" publishTime="10/20/2015 10:59:41" />
+    <file relUrl="index.aspx" publishTime="10/27/2015 10:49:50" />
     <file relUrl="pic/banner05.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="bin/NLog.dll" publishTime="10/19/2015 13:45:48" />
     <file relUrl="js/zepto.min.js" publishTime="10/20/2015 10:13:32" />
@@ -50,14 +50,14 @@
     <file relUrl="ajax/mine_sc_list.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="pic/21.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="css/myaddress.css" publishTime="10/19/2015 13:53:05" />
-    <file relUrl="bin/Banana.Entity.dll" publishTime="10/21/2015 14:28:46" />
+    <file relUrl="bin/Banana.Entity.dll" publishTime="11/02/2015 14:43:38" />
     <file relUrl="pic/banner04.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="pic/5fcbe44c-3564-4adb-bc1c-5918b8c49977_300_300_s.jpg" publishTime="10/19/2015 13:53:41" />
-    <file relUrl="bin/Banana.Entity.pdb" publishTime="10/21/2015 14:28:46" />
+    <file relUrl="bin/Banana.Entity.pdb" publishTime="11/02/2015 14:43:38" />
     <file relUrl="pic/x2.jpg" publishTime="10/19/2015 13:53:42" />
     <file relUrl="pic01/9.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="prodlist.aspx" publishTime="10/21/2015 17:52:32" />
-    <file relUrl="bin/BananaBase.Wapsite.dll" publishTime="10/22/2015 18:38:02" />
+    <file relUrl="bin/BananaBase.Wapsite.dll" publishTime="11/02/2015 14:43:55" />
     <file relUrl="ajax/index_new.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="ajax/index_temai.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="pic01/5.jpg" publishTime="10/19/2015 13:53:41" />
@@ -70,7 +70,6 @@
     <file relUrl="yzmImg.aspx" publishTime="10/19/2015 13:54:52" />
     <file relUrl="Global.asax" publishTime="10/19/2015 13:29:31" />
     <file relUrl="pic/p10.jpg" publishTime="10/19/2015 13:53:41" />
-    <file relUrl="js/address.js" publishTime="10/20/2015 10:13:14" />
     <file relUrl="ajax/index_getTodayDaZhe.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="bin/NPOI.OOXML.dll" publishTime="10/13/2015 13:51:26" />
     <file relUrl="ajax/index_cainixihuan.ashx" publishTime="10/19/2015 14:12:08" />
@@ -84,7 +83,7 @@
     <file relUrl="pic/p6.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="ajax/index_prolist.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="10/19/2015 13:39:32" />
-    <file relUrl="bin/Banana.Bll.pdb" publishTime="10/21/2015 14:28:47" />
+    <file relUrl="bin/Banana.Bll.pdb" publishTime="11/02/2015 14:43:39" />
     <file relUrl="ajax/min_sc_delbyid.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="images/baseIcons.png" publishTime="10/19/2015 13:53:25" />
     <file relUrl="pic/13.jpg" publishTime="10/19/2015 13:53:41" />
@@ -98,7 +97,8 @@
     <file relUrl="pic/b.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="pic/14.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="images/bannerPic.png" publishTime="10/19/2015 13:53:25" />
-    <file relUrl="bin/Banana.Bll.dll" publishTime="10/21/2015 14:28:47" />
+    <file relUrl="bin/Banana.Bll.dll" publishTime="11/02/2015 14:43:39" />
+    <file relUrl="shop_list_detail.aspx" publishTime="11/02/2015 14:30:58" />
     <file relUrl="pic01/10.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="js/loadingDate.js" publishTime="10/19/2015 13:53:25" />
     <file relUrl="ajax/yzm.ashx" publishTime="10/19/2015 14:12:07" />
@@ -115,19 +115,19 @@
     <file relUrl="bin/Dapper.dll" publishTime="10/13/2015 13:51:26" />
     <file relUrl="pic01/8.gif" publishTime="10/19/2015 13:53:41" />
     <file relUrl="pic/15.jpg" publishTime="10/19/2015 13:53:41" />
-    <file relUrl="OrderInfo.aspx" publishTime="10/22/2015 13:16:52" />
-    <file relUrl="shop_list_detail.aspx" publishTime="10/21/2015 19:27:54" />
+    <file relUrl="OrderInfo.aspx" publishTime="11/09/2015 09:36:45" />
+    <file relUrl="js/address.js" publishTime="10/20/2015 10:13:14" />
     <file relUrl="pic01/6.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="pic/6.jpg" publishTime="10/19/2015 13:53:41" />
-    <file relUrl="bin/BananaBase.Wapsite.pdb" publishTime="10/22/2015 18:38:01" />
+    <file relUrl="bin/BananaBase.Wapsite.pdb" publishTime="11/02/2015 14:43:55" />
     <file relUrl="pic01/14.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="images/indexIcons.png" publishTime="10/19/2015 13:53:25" />
     <file relUrl="images/smallPic.png" publishTime="10/19/2015 13:53:25" />
-    <file relUrl="bin/Banana.Dal.dll" publishTime="10/21/2015 14:28:46" />
+    <file relUrl="bin/Banana.Dal.dll" publishTime="11/02/2015 14:43:38" />
     <file relUrl="ajax/qqlogin.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="mine.aspx" publishTime="10/21/2015 16:16:10" />
     <file relUrl="pic/banner01.jpg" publishTime="10/19/2015 13:53:41" />
-    <file relUrl="bin/Banana.Dal.pdb" publishTime="10/21/2015 14:28:46" />
+    <file relUrl="bin/Banana.Dal.pdb" publishTime="11/02/2015 14:43:38" />
     <file relUrl="pic/17.jpg" publishTime="10/19/2015 13:53:41" />
     <file relUrl="ajax/yz.ashx" publishTime="10/19/2015 14:12:07" />
     <file relUrl="temai.aspx" publishTime="10/19/2015 13:54:52" />

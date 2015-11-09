@@ -63,7 +63,7 @@
            <li class="bdradius6"><a href="shop_list_detail.aspx?pro_id=<%#Eval("id") %>">
           <span class="smallImgbox"><img src="/images/smallPic.png" alt="/<%# ApplicationSettings.Get("imgurl") +Eval("BigThumPic") %>" class="lazy" ></span>
           <span class="prodTitle"><%#Eval("ProductName")%></span>
-          <span class="prodPrice clf"> <%#Eval("OemPrice").ToString().Split('.')[0].ToInt() > 199 ? "<i class=\"fl\">包邮</i>" : ""%>  <i class="fl">已售 <%#Eval("Sale") ?? new Random().Next(500)%></i></span>
+          <span class="prodPrice clf"> <%#Eval("IsFree").ToString() == "True" ? "<i class=\"fl\">包邮</i>" : Eval("OemPrice").ToString().Split('.')[0].ToInt() > 199 ? "<i class=\"fl\">包邮</i>" : ""%>  <i class="fl">已售 <%#Eval("Sale") ?? new Random().Next(500)%></i></span>
           <span class="prodPrice clf"><i class="red fl">￥<%#Eval("OemPrice").ToString().Split('.')[0]%></i> <i class="fl">￥<%#Eval("MarketPrice").ToString().Split('.')[0]%></i></span>
         </a></li>
       </ItemTemplate>

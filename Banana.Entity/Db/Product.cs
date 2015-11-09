@@ -100,7 +100,8 @@ namespace Banana.Entity.Db
         public String VideoUrl { get; set; }
         public string Source { get; set; }
         public bool Linepayment { get; set; }
-       
+        public bool IsFree { get; set; }
+
 
     }
 

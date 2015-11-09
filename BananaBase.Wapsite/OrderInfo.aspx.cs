@@ -50,6 +50,7 @@ namespace Banana.Wapsite
         protected Users current = new Users();
         protected IList<Product> productList = new List<Product>();
         protected bool isLinepayment;
+        protected bool isFree;
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -93,6 +94,7 @@ namespace Banana.Wapsite
                     {
                         isLinepayment = false;
                     }
+                    isFree = p.Linepayment;
                     
                 }
 

@@ -49,7 +49,7 @@ namespace Banana.Wapsite.ajax
                     result += string.Format(sctemp, list.Items[i].Id,
                         "/" + ApplicationSettings.Get("imgurl") + list.Items[i].BigThumPic, list.Items[i].ProductName,
                         list.Items[i].Sale ?? new Random().Next(500), list.Items[i].OemPrice.ToString().Split('.')[0],
-                        list.Items[i].MarketPrice.ToString().Split('.')[0], list.Items[i].OemPrice.ToString().Split('.')[0].ToInt() > 199 ? "<i class=\"fl\">包邮</i>" : "");
+                        list.Items[i].MarketPrice.ToString().Split('.')[0], list.Items[i].IsFree == true ? "<i class=\"fl\">包邮</i>" : list.Items[i].OemPrice.ToString().Split('.')[0].ToInt() > 199 ? "<i class=\"fl\">包邮</i>" : "");
 
                 }
                 result += "<span id=\"pager\" style=\"display:none\" pagesize=\"" + pagesize + "\" pagecount=\"" +
